@@ -325,8 +325,12 @@ trait ControllerTrait
                     )->addClass('pull-right');
                 }
 
-                if (array_has($options, 'text')) {
-                    $row_html .= array_get($options, 'text', '');
+                if (array_has($options, 'text_left')) {
+                    $row_html = array_get($options, 'text_left', '').$row_html;
+                }
+
+                if (array_has($options, 'text_right')) {
+                    $row_html .= array_get($options, 'text_right', '');
                 }
 
                 if (!empty($row_html)) {
