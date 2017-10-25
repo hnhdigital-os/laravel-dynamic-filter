@@ -284,7 +284,7 @@ trait ControllerTrait
      *
      * @return void
      */
-    protected static function showSearchAppliedFilters(&$tbody, &$search_request, $result, $model, $column_span = 1)
+    protected static function showSearchAppliedFilters(&$tbody, &$search_request, $result, $model, $column_span = 1, $options = [])
     {
         self::pagination($result, $search_request);
 
@@ -323,6 +323,10 @@ trait ControllerTrait
                         .' '.
                         Html::a('Clear')->addClass('btn btn-xs btn-warning action-cancel-filter')->scriptLink('Cancel')
                     )->addClass('pull-right');
+                }
+
+                if (array_has($options, 'text')) {
+                    $row_html .= array_get($options, 'text', '');
                 }
 
                 if (!empty($row_html)) {
