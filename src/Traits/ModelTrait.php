@@ -726,8 +726,8 @@ trait ModelTrait
                 break;
                 case 'BelongsToMany':
                     $parent_key = $relation->getQualifiedParentKeyName();
-                    $foreign_key = $relation->getQualifiedForeignKeyName();
-                    $related_foreign_key = $relation->getQualifiedRelatedKeyName();
+                    $foreign_key = $relation->getQualifiedForeignPivotKeyName();
+                    $related_foreign_key = $relation->getQualifiedRelatedPivotKeyName();
                 break;
 
             }
