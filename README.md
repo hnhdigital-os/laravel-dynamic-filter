@@ -1,5 +1,7 @@
 # Laravel Dynamic Filtering
 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) This package has been discontinued. Consider using [Model Search](https://github.com/hnhdigital-os/laravel-model-search) and  [Model Search Components](https://github.com/hnhdigital-os/laravel-search-components)
+
 Provides the ability to set filtering attributes and model relationship filtering.
 
 [![Latest Stable Version](https://poser.pugx.org/hnhdigital-os/laravel-dynamic-filter/v/stable.svg)](https://packagist.org/packages/hnhdigital-os/laravel-dynamic-filter) [![Total Downloads](https://poser.pugx.org/hnhdigital-os/laravel-dynamic-filter/downloads.svg)](https://packagist.org/packages/hnhdigital-os/laravel-dynamic-filter) [![Latest Unstable Version](https://poser.pugx.org/hnhdigital-os/laravel-dynamic-filter/v/unstable.svg)](https://packagist.org/packages/hnhdigital-os/laravel-dynamic-filter) [![License](https://poser.pugx.org/hnhdigital-os/laravel-dynamic-filter/license.svg)](https://packagist.org/packages/hnhdigital-os/laravel-dynamic-filter)
