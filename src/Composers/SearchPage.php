@@ -123,7 +123,7 @@ class SearchPage
             if ($setup->get('search.layout-style', '') == 'inline') {
                 $layout_div_class = 'row';
             } else {
-                $layout_div_class = 'wrapper wrapper-content animated fadeInRight';
+                $layout_div_class = 'wrapper wrapper-content ';
             }
         } else {
             $view_data['search_data'] = ['setup' => new \Bluora\LaravelDynamicFilter\Objects\SearchViewOptions(), 'result' => new \Bluora\LaravelDynamicFilter\Objects\SearchViewResult()];
