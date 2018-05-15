@@ -717,8 +717,8 @@ trait ModelTrait
                     $foreign_key = $relation->getQualifiedOwnerKeyName();
                 break;
                 case 'HasOne':
-                    $parent_key = $table.'.'.$relation->getParentKey();
-                    $foreign_key = $table.'.'.$relation->getForeignKey();
+                    $parent_key = $relation->getQualifiedParentKeyName();
+                    $foreign_key = $relation->getQualifiedForeignKeyName();
                 break;
                 case 'HasMany':
                     $parent_key = $relation->getQualifiedOwnerKeyName();
