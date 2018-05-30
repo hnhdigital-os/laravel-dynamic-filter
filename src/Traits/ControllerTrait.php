@@ -180,6 +180,9 @@ trait ControllerTrait
             case 'HasOne':
                 $model_key_name = $relation->getForeignKeyName();
                 break;
+            case 'HasMany':
+                $model_key_name = $relation->getQualifiedForeignKeyName();
+                break;
             case 'BelongsToMany':
                 $model_key_name = $relation->getQualifiedForeignPivotKeyName();
                 break;
