@@ -184,7 +184,7 @@ trait ControllerTrait
                 $model_key_name = $relation->getQualifiedForeignKeyName();
                 break;
             case 'BelongsToMany':
-                $model_key_name = $relation->getQualifiedForeignPivotKeyName();
+                $model_key_name = $relation->getQualifiedRelatedPivotKeyName();
                 break;
         }
 
